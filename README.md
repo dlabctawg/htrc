@@ -11,11 +11,12 @@ For more information on HTRC:
 ## Installation
 
 To start we'll need to install a few things:
-* Install the *HTRC Feature Reader* to work with Extracted Features: 
+* Install the *HTRC Feature Reader* to work with Extracted Features
+Using conda:
 ```
 conda install -c htrc htrc-feature-reader
 ``` 
-or
+Or using pip:
 ```
 pip install htrc-feature-reader
 pip install matplotlib jupyter
