@@ -11,23 +11,35 @@ For more information on HTRC:
 ## Installation
 
 To start we'll need to install a few things:
-* Install the *HTRC FeatureReader* to work with Extracted Features using conda:
+* Install the *HTRC Feature Reader* to work with Extracted Features using Conda: 
 ```
 conda install -c htrc htrc-feature-reader
 ``` 
-Or using pip:
+  * or using pip
 ```
 pip install htrc-feature-reader
 pip install matplotlib jupyter
 ```
 * Install Rsync to download Extracted Features from HathiTrust:
 
-  * For linux:
+ * For linux:
 ```
 yum -y install rsync
 ```
-  * For mac:
+ * For mac:
 ```
 brew tap homebrew/dupes
 brew install rsync
 ```
+
+## Add volumes from HTRC
+
+### Finding Volume IDs in HathiTrust
+
+To build your own corpus, you will need to find the volume ID for each volume you'd like to include from the [HathiTrust Library](https://www.hathitrust.org/).
+
+* Search for your book, and copy the URL from the *Limited (Search Only)* or *Full View* links under the work. <img src="files/judith-butler-ht.png">
+* The final string of characters after the final / is your volume ID
+* For example, mdp.39015070698322 is the volume ID for "https://hdl.handle.net/2027/mdp.39015070698322"
+
+
