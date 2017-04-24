@@ -11,8 +11,7 @@ For more information on HTRC:
 ## Installation
 
 To start we'll need to install a few things:
-* Install the *HTRC Feature Reader* to work with Extracted Features
-Using conda:
+* Install the *HTRC FeatureReader* to work with Extracted Features using conda:
 ```
 conda install -c htrc htrc-feature-reader
 ``` 
