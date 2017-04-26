@@ -11,22 +11,26 @@ For more information on HTRC:
 ## Installation
 
 To start we'll need to install a few things:
-* Install the *HTRC Feature Reader* to work with Extracted Features using Conda: 
+* Install the *HTRC Feature Reader* to work with Extracted Features: 
 ```
 conda install -c htrc htrc-feature-reader
 ``` 
-  * or using pip
+or
 ```
 pip install htrc-feature-reader
 pip install matplotlib jupyter
 ```
 * Install Rsync to download Extracted Features from HathiTrust:
 
- * For linux:
+  * For Linux:
 ```
 yum -y install rsync
 ```
- * For mac:
+  * For Mac you need to use [Homebrew](https://brew.sh/) to install Rsync. To install Homebrew:
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+  * And then to install Rsync on Mac using Homebrew:
 ```
 brew tap homebrew/dupes
 brew install rsync
