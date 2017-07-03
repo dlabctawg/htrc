@@ -36,14 +36,28 @@ brew tap homebrew/dupes
 brew install rsync
 ```
 
-## Add volumes from HTRC
+## Adding volumes from HathiTrust
 
-### Finding Volume IDs in HathiTrust
+To build your own corpus, you first need to find the volumes you'd like to include in the [HathiTrust Library](https://www.hathitrust.org/). Alternately, you can access volumes from existing [public HT collections](https://babel.hathitrust.org/cgi/mb?colltype=featured), or use one of the sample datasets included below under the *Sample datasets* heading. To access extracted features from HathiTrust:
 
-To build your own corpus, you will need to find the volume ID for each volume you'd like to include from the [HathiTrust Library](https://www.hathitrust.org/).
+* Install and configure [the HT + HTRC mashup](https://data.analytics.hathitrust.org/features/) browser extension.
+* Once the extension is running, go to the [HathiTrust Library](https://www.hathitrust.org/), and search for the titles you want to include.
+* You can manually download extracted features one result at a time by simply choosing the *Download Extracted Features* link for any item in your search results. Save the .json.bz2 file or files and skip to the next section, *Working with Extracted Features* below to load them into your workspace.
+* If you plan to work with a large number of texts, you might choose instead to create a collection in HathiTrust, and then download the Extracted Features for the entire collection at once. This requires a valid CalNet ID. 
 
-* Search for your book, and copy the URL from the *Limited (Search Only)* or *Full View* links under the work. <img src="files/judith-butler-ht.png">
-* The final string of characters after the final / is your volume ID
-* For example, mdp.39015070698322 is the volume ID for "https://hdl.handle.net/2027/mdp.39015070698322"
+### To create a collection:
 
+* [Login to HathiTrust](https://www.hathitrust.org/shibboleth)
+* Change the HathiTrust search tab to *Full-Text* or go to the [Advanced Full-Text search](https://babel.hathitrust.org/cgi/ls?a=page;page=advanced).
 
+<img src="files/ht-full-text.png">
+
+* Check the boxes to the left of any search results you want to add to your collection (or select all), and use the *Select Collection* dropdown to *Add Selected* volumes to collections of your own design.
+
+<img src="files/ht-add-selected.png">
+
+* Choose *My Collections* from the top of the HathiTrust interface, choose your collection, and from the *Download Metadata* button/dropdown choose the TSV option.
+
+<img src="files/ht-json.png">
+
+* Open the TSV file, and then delete all of the columns except for the first column, *htitem_id.* Delete the *htitem_id* header row as well and then save the file to your working directory.
