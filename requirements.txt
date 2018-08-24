@@ -1,1 +1,2 @@
 htrc-feature-reader
+matplotlib
