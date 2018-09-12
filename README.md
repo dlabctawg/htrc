@@ -1,5 +1,7 @@
 # HathiTrust Research Center (HTRC)
 
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/aculich/htrc/master?filepath=HTRC%20-%20Extracted%20Features.ipynb)
+
 The [HathiTrust Digital Library](https://www.hathitrust.org/) contains over 14 million volumes scanned from academic libraries around the world (primarily in North America). The [HathiTrust Research Center](https://analytics.hathitrust.org/) allows researchers to access almost all of those texts in a few different modes for computational text analysis. 
 
 This notebook will walk us through getting set-up to analyze [HTRC Extracted Features](https://wiki.htrc.illinois.edu/display/COM/Extracted+Features+Dataset) for volumes in HathiTrust in a Jupyter/Python environment. *Extracted Features* are currently (as of April 2017) the most robust way to access in-copyright works from the HT Library for computational analysis. 
